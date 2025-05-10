@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My YouTube Channel | Promotion Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        
+        .profile-pic {
+            border: 4px solid #4fd1c5;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-pic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .link-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        
+        .youtube-btn {
+            background: linear-gradient(45deg, #FF0000, #FF5E5E);
+        }
+        
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+        }
+        
+        .newsletter-input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .stats-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header Section -->
+    <header class="py-8 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <div class="flex justify-center mb-6">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic w-32 h-32 rounded-full object-cover floating">
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">@YourChannelName</h1>
+            <p class="text-lg text-gray-300 mb-6">Creating awesome content about [your niche]</p>
+            
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="#" class="social-icon text-2xl text-white hover:text-red-500"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon text-2xl text-white hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-6 px-4">
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="stats-card p-4 text-center">
+                <div class="text-3xl font-bold text-teal-400">10K+</div>
+                <div class="text-sm text-gray-300">Subscribers</div>
+            </div>
+            <div class="stats-card p-4 text-center">
+                <div class="text-3xl font-bold text-teal-400">100+</div>
+                <div class="text-sm text-gray-300">Videos</div>
+            </div>
+            <div class="stats-card p-4 text-center">
+                <div class="text-3xl font-bold text-teal-400">1M+</div>
+                <div class="text-sm text-gray-300">Views</div>
+            </div>
+            <div class="stats-card p-4 text-center">
+                <div class="text-3xl font-bold text-teal-400">5K+</div>
+                <div class="text-sm text-gray-300">Community</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="py-8 px-4 max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Latest Video</h2>
+        <div class="video-container rounded-xl overflow-hidden shadow-xl">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Links Section (Linktree Style) -->
+    <section class="py-8 px-4 max-w-md mx-auto w-full">
+        <h2 class="text-2xl font-bold mb-6 text-center">Connect With Me</h2>
+        <div class="space-y-4">
+            <a href="#" class="link-card block p-4 rounded-lg text-center font-medium hover:text-white">
+                <div class="flex items-center justify-center">
+                    <i class="fab fa-youtube text-2xl mr-3 text-red-500"></i>
+                    <span>Subscribe on YouTube</span>
+                </div>
+            </a>
+            
+            <a href="#" class="link-card block p-4 rounded-lg text-center font-medium hover:text-white">
+                <div class="flex items-center justify-center">
+                    <i class="fab fa-discord text-2xl mr-3 text-indigo-500"></i>
+                    <span>Join Our Discord</span>
+                </div>
+            </a>
+            
+            <a href="#" class="link-card block p-4 rounded-lg text-center font-medium hover:text-white">
+                <div class="flex items-center justify-center">
+                    <i class="fab fa-twitter text-2xl mr-3 text-blue-400"></i>
+                    <span>Follow on Twitter</span>
+                </div>
+            </a>
+            
+            <a href="#" class="link-card block p-4 rounded-lg text-center font-medium hover:text-white">
+                <div class="flex items-center justify-center">
+                    <i class="fab fa-instagram text-2xl mr-3 text-pink-500"></i>
+                    <span>Follow on Instagram</span>
+                </div>
+            </a>
+            
+            <a href="#" class="link-card block p-4 rounded-lg text-center font-medium hover:text-white">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-envelope text-2xl mr-3 text-yellow-400"></i>
+                    <span>Business Inquiries</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-8 px-4 max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">About My Channel</h2>
+        <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl">
+            <p class="mb-4">Welcome to my YouTube channel! I create content about [your niche] to help you [value proposition].</p>
+            <p class="mb-4">My goal is to [your mission statement]. I post new videos every [frequency] so make sure to subscribe!</p>
+            <p>Join our community of [number] awesome subscribers who are learning and growing together!</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-8 px-4 max-w-md mx-auto w-full">
+        <h2 class="text-2xl font-bold mb-6 text-center">Stay Updated</h2>
+        <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl">
+            <p class="mb-4 text-center">Join my newsletter for exclusive content and updates!</p>
+            <form class="flex flex-col space-y-4">
+                <input type="email" placeholder="Your email" class="newsletter-input px-4 py-3 rounded-lg">
+                <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-8 px-4 max-w-2xl mx-auto" id="contact">
+        <h2 class="text-2xl font-bold mb-6 text-center">Contact Me</h2>
+        <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl">
+            <form class="space-y-4">
+                <div>
+                    <label for="name" class="block mb-1">Name</label>
+                    <input type="text" id="name" class="newsletter-input w-full px-4 py-3 rounded-lg">
+                </div>
+                <div>
+                    <label for="email" class="block mb-1">Email</label>
+                    <input type="email" id="email" class="newsletter-input w-full px-4 py-3 rounded-lg">
+                </div>
+                <div>
+                    <label for="message" class="block mb-1">Message</label>
+                    <textarea id="message" rows="4" class="newsletter-input w-full px-4 py-3 rounded-lg"></textarea>
+                </div>
+                <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg w-full transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-8 px-4 text-center text-gray-400">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="social-icon hover:text-white"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon hover:text-white"><i class="fab fa-discord"></i></a>
+            </div>
+            <p class="text-sm">© 2023 Your Channel Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Subscribe Button (Mobile) -->
+    <div class="fixed bottom-6 right-6 md:hidden">
+        <a href="#" class="youtube-btn text-white font-bold py-3 px-6 rounded-full shadow-lg flex items-center">
+            <i class="fab fa-youtube mr-2"></i> Subscribe
+        </a>
+    </div>
+
+    <script>
+        // Simple animation for link cards when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const linkCards = document.querySelectorAll('.link-card');
+            
+            linkCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+            
+            // You can add more JavaScript functionality here
+            // For example, form submission handling, analytics, etc.
+        });
+    </script>
+</body>
+</html>
